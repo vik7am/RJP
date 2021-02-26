@@ -8,17 +8,18 @@
 <title>Job List - JobGrids Job Portal HTML Template.</title>
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+ {% load static %}
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.svg' %}" />
 
 
 <link href="../../../fonts.googleapis.com/css2c948.css?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-<link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
-<link rel="stylesheet" href="assets/css/animate.css" />
-<link rel="stylesheet" href="assets/css/tiny-slider.css" />
-<link rel="stylesheet" href="assets/css/glightbox.min.css" />
-<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+<link rel="stylesheet" href="{% static 'assets/css/LineIcons.2.0.css' %}" />
+<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}" />
+<link rel="stylesheet" href="{% static 'assets/css/tiny-slider.css' %}" />
+<link rel="stylesheet" href="{% static 'assets/css/glightbox.min.css' %}" />
+<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -36,8 +37,8 @@
 <div class="row align-items-center">
 <div class="col-lg-12">
 <nav class="navbar navbar-expand-lg">
-<a class="navbar-brand logo" href="index-2.html">
-<img class="logo1" src="assets/images/logo/logo.svg" alt="Logo" />
+<a class="navbar-brand logo" href="/index-2/">
+<img class="logo1" src="{% static 'assets/images/logo/logo.svg' %}" alt="Logo" />
 </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="toggler-icon"></span>
@@ -47,52 +48,52 @@
 <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
 <ul id="nav" class="navbar-nav ml-auto">
 <li class="nav-item">
-<a href="index-2.html">Home</a>
+<a href="/index-2/">Home</a>
 <ul class="sub-menu">
-<li><a href="index-2.html">Home 1</a></li>
-<li><a href="index2.html">Home 2</a></li>
-<li><a href="index3.html">Home 3</a></li>
-<li><a href="index4.html">Home 4</a></li>
+<li><a href="/index-2/">Home 1</a></li>
+<li><a href="/index2/">Home 2</a></li>
+<li><a href="/index3/">Home 3</a></li>
+<li><a href="/index4/">Home 4</a></li>
 </ul>
 </li>
 <li class="nav-item"><a href="#" class="active">Pages</a>
 <ul class="sub-menu">
-<li><a href="about-us.html">About Us</a></li>
-<li><a href="job-list.html" class="active">Job List</a></li>
-<li><a href="job-details.html">Job Details</a></li>
-<li><a href="resume.html">Resume Page</a></li>
-<li><a href="privacy-policy.html">Privacy Policy</a></li>
-<li><a href="faq.html">Faq</a></li>
-<li><a href="pricing.html">Our Pricing</a></li>
- <li><a href="404.html">404 Error</a></li>
-<li><a href="mail-success.html">Mail Success</a></li>
+<li><a href="/about-us/">About Us</a></li>
+<li><a href="/job-list/" class="active">Job List</a></li>
+<li><a href="/job-details/">Job Details</a></li>
+<li><a href="/resume/">Resume Page</a></li>
+<li><a href="/privacy-policy/">Privacy Policy</a></li>
+<li><a href="/faq/">Faq</a></li>
+<li><a href="/pricing/">Our Pricing</a></li>
+ <li><a href="/404/">404 Error</a></li>
+<li><a href="/mail-success/">Mail Success</a></li>
 </ul>
 </li>
 <li class="nav-item"><a href="#">Candidates</a>
 <ul class="sub-menu">
-<li><a href="browse-jobs.html">Browse Jobs</a></li>
-<li><a href="browse-categories.html">Browse Categories</a></li>
-<li><a href="add-resume.html">Add Resume</a></li>
-<li><a href="job-alerts.html">Job Alerts</a></li>
+<li><a href="/browse-jobs/">Browse Jobs</a></li>
+<li><a href="/browse-categories/">Browse Categories</a></li>
+<li><a href="/add-resume/">Add Resume</a></li>
+<li><a href="/job-alerts/">Job Alerts</a></li>
 </ul>
 </li>
 <li class="nav-item"><a href="#">Employers </a>
 <ul class="sub-menu">
-<li><a href="post-job.html">Add Job</a></li>
-<li><a href="manage-jobs.html">Manage Jobs</a></li>
-<li><a href="manage-applications.html">Manage Applications</a></li>
-<li><a href="manage-resumes.html">Manage Resume</a></li>
-<li><a href="browse-resumes.html">Browse Resumes</a></li>
+<li><a href="/post-job/">Add Job</a></li>
+<li><a href="/manage-jobs/">Manage Jobs</a></li>
+<li><a href="/manage-applications/">Manage Applications</a></li>
+<li><a href="/manage-resumes/">Manage Resume</a></li>
+<li><a href="/browse-resumes/">Browse Resumes</a></li>
 </ul>
 </li>
 <li class="nav-item"><a href="#">Blog</a>
 <ul class="sub-menu">
-<li><a href="blog-grid-sidebar.html">Blog Grid Sidebar</a></li>
-<li><a href="blog-single.html">Blog Single</a></li>
-<li><a href="blog-single-sidebar.html">Blog Single Sibebar</a></li>
+<li><a href="/blog-grid-sidebar/">Blog Grid Sidebar</a></li>
+<li><a href="/blog-single/">Blog Single</a></li>
+<li><a href="/blog-single-sidebar/">Blog Single Sibebar</a></li>
 </ul>
 </li>
-<li class="nav-item"><a href="contact.html">Contact </a> </li>
+<li class="nav-item"><a href="/contact/">Contact </a> </li>
 </ul>
 </div>
 
@@ -122,8 +123,8 @@
 Business draws on a wide range of different business .</p>
 </div>
 <ul class="breadcrumb-nav">
-<li><a href="index-2.html">Home</a></li>
-<li><a href="news-standard.html">Blog</a></li>
+<li><a href="/index-2/">Home</a></li>
+<li><a href="/news-standard/">Blog</a></li>
 <li>Job List</li>
 </ul>
 </div>
@@ -140,10 +141,10 @@ Business draws on a wide range of different business .</p>
 
 <div class="single-job">
 <div class="job-image">
-<img src="assets/images/jobs/img1.png" alt="#">
+<img src="{% static 'assets/images/jobs/img1.png' %}" alt="#">
 </div>
 <div class="job-content">
-<h4><a href="job-details.html">Software Engineer</a></h4>
+<h4><a href="/job-details/">Software Engineer</a></h4>
 <p>We are looking for Enrollment Advisors who are looking to take 30-35 appointments per
 week. All leads are pre-scheduled. </p>
 <ul>
@@ -154,7 +155,7 @@ week. All leads are pre-scheduled. </p>
 </div>
 <div class="job-button">
 <ul>
-<li><a href="job-details.html">Apply</a></li>
+<li><a href="/job-details/">Apply</a></li>
 <li><span>full time</span></li>
 </ul>
 </div>
@@ -163,10 +164,10 @@ week. All leads are pre-scheduled. </p>
 
 <div class="single-job">
 <div class="job-image">
-<img src="assets/images/jobs/img2.png" alt="#">
+<img src="{% static 'assets/images/jobs/img2.png' %}" alt="#">
 </div>
 <div class="job-content">
-<h4><a href="job-details.html">Graphics Design</a></h4>
+<h4><a href="/job-details/">Graphics Design</a></h4>
 <p>We are looking for Enrollment Advisors who are looking to take 30-35 appointments per
 week. All leads are pre-scheduled. </p>
 <ul>
@@ -177,7 +178,7 @@ week. All leads are pre-scheduled. </p>
 </div>
 <div class="job-button">
 <ul>
-<li><a href="job-details.html">Apply</a></li>
+<li><a href="/job-details/">Apply</a></li>
 <li><span>Intern</span></li>
 </ul>
 </div>
@@ -186,10 +187,10 @@ week. All leads are pre-scheduled. </p>
 
 <div class="single-job">
 <div class="job-image">
-<img src="assets/images/jobs/img3.png" alt="#">
+<img src="{% static 'assets/images/jobs/img3.png' %}" alt="#">
 </div>
 <div class="job-content">
-<h4><a href="job-details.html">Ui/Ux Design</a></h4>
+<h4><a href="/job-details/">Ui/Ux Design</a></h4>
 <p>We are looking for Enrollment Advisors who are looking to take 30-35 appointments per
 week. All leads are pre-scheduled. </p>
 <ul>
@@ -200,7 +201,7 @@ week. All leads are pre-scheduled. </p>
 </div>
 <div class="job-button">
 <ul>
-<li><a href="job-details.html">Apply</a></li>
+<li><a href="/job-details/">Apply</a></li>
 <li><span>Part Time</span></li>
 </ul>
  </div>
@@ -209,10 +210,10 @@ week. All leads are pre-scheduled. </p>
 
 <div class="single-job">
 <div class="job-image">
-<img src="assets/images/jobs/img4.png" alt="#">
+<img src="{% static 'assets/images/jobs/img4.png' %}" alt="#">
 </div>
 <div class="job-content">
-<h4><a href="job-details.html">Web Developer</a></h4>
+<h4><a href="/job-details/">Web Developer</a></h4>
 <p>We are looking for Enrollment Advisors who are looking to take 30-35 appointments per
 week. All leads are pre-scheduled. </p>
 <ul>
@@ -223,7 +224,7 @@ week. All leads are pre-scheduled. </p>
 </div>
 <div class="job-button">
 <ul>
-<li><a href="job-details.html">Apply</a></li>
+<li><a href="/job-details/">Apply</a></li>
 <li><span>Intern</span></li>
 </ul>
 </div>
@@ -234,10 +235,10 @@ week. All leads are pre-scheduled. </p>
 
 <div class="single-job">
 <div class="job-image">
-<img src="assets/images/jobs/img7.png" alt="#">
+<img src="{% static 'assets/images/jobs/img7.png' %}" alt="#">
 </div>
 <div class="job-content">
-<h4><a href="job-details.html">Digital Marketer</a></h4>
+<h4><a href="/job-details/">Digital Marketer</a></h4>
 <p>We are looking for Enrollment Advisors who are looking to take 30-35 appointments per
 week. All leads are pre-scheduled. </p>
 <ul>
@@ -248,7 +249,7 @@ week. All leads are pre-scheduled. </p>
 </div>
 <div class="job-button">
 <ul>
-<li><a href="job-details.html">Apply</a></li>
+<li><a href="/job-details/">Apply</a></li>
 <li><span>Part Time</span></li>
 </ul>
 </div>
@@ -257,10 +258,10 @@ week. All leads are pre-scheduled. </p>
 
 <div class="single-job">
 <div class="job-image">
-<img src="assets/images/jobs/img5.png" alt="#">
+<img src="{% static 'assets/images/jobs/img5.png' %}" alt="#">
 </div>
 <div class="job-content">
-<h4><a href="job-details.html">Sales Manager</a></h4>
+<h4><a href="/job-details/">Sales Manager</a></h4>
 <p>We are looking for Enrollment Advisors who are looking to take 30-35 appointments per
 week. All leads are pre-scheduled. </p>
 <ul>
@@ -271,7 +272,7 @@ week. All leads are pre-scheduled. </p>
 </div>
 <div class="job-button">
 <ul>
-<li><a href="job-details.html">Apply</a></li>
+<li><a href="/job-details/">Apply</a></li>
 <li><span>full time</span></li>
 </ul>
 </div>
@@ -280,10 +281,10 @@ week. All leads are pre-scheduled. </p>
 
 <div class="single-job">
 <div class="job-image">
-<img src="assets/images/jobs/img6.png" alt="#">
+<img src="{% static 'assets/images/jobs/img6.png' %}" alt="#">
 </div>
 <div class="job-content">
-<h4><a href="job-details.html">Product Designer</a></h4>
+<h4><a href="/job-details/">Product Designer</a></h4>
 <p>We are looking for Enrollment Advisors who are looking to take 30-35 appointments per
 week. All leads are pre-scheduled. </p>
 <ul>
@@ -294,7 +295,7 @@ week. All leads are pre-scheduled. </p>
 </div>
 <div class="job-button">
 <ul>
-<li><a href="job-details.html">Apply</a></li>
+<li><a href="/job-details/">Apply</a></li>
 <li><span>full time</span></li>
 </ul>
 </div>
@@ -303,10 +304,10 @@ week. All leads are pre-scheduled. </p>
 
 <div class="single-job">
 <div class="job-image">
-<img src="assets/images/jobs/img8.png" alt="#">
+<img src="{% static 'assets/images/jobs/img8.png' %}" alt="#">
 </div>
 <div class="job-content">
-<h4><a href="job-details.html">Android Developer</a></h4>
+<h4><a href="/job-details/">Android Developer</a></h4>
 <p>We are looking for Enrollment Advisors who are looking to take 30-35 appointments per
 week. All leads are pre-scheduled. </p>
 <ul>
@@ -317,7 +318,7 @@ week. All leads are pre-scheduled. </p>
 </div>
 <div class="job-button">
 <ul>
-<li><a href="job-details.html">Apply</a></li>
+<li><a href="/job-details/">Apply</a></li>
 <li><span>Part Time</span></li>
 </ul>
 </div>
@@ -492,7 +493,7 @@ incididunt ut labore et dolore</p>
 
 <div class="f-about single-footer">
 <div class="logo">
-<a href="index-2.html"><img src="assets/images/logo/logo.svg" alt="Logo"></a>
+<a href="/index-2/"><img src="{% static 'assets/images/logo/logo.svg' %}" alt="Logo"></a>
 </div>
 <p>Start building your creative website with our awesome template Massive.</p>
 <ul class="contact-address">
@@ -595,12 +596,12 @@ incididunt ut labore et dolore</p>
 <i class="lni lni-chevron-up"></i>
 </a>
 
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/bootstrap.min.js" type="06533198dc58f93d92eb8cd0-text/javascript"></script>
-<script src="assets/js/wow.min.js" type="06533198dc58f93d92eb8cd0-text/javascript"></script>
-<script src="assets/js/tiny-slider.js" type="06533198dc58f93d92eb8cd0-text/javascript"></script>
-<script src="assets/js/glightbox.min.js" type="06533198dc58f93d92eb8cd0-text/javascript"></script>
-<script src="assets/js/main.js" type="06533198dc58f93d92eb8cd0-text/javascript"></script>
-<script src="../../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="06533198dc58f93d92eb8cd0-|49" defer=""></script></body>
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'assets/js/bootstrap.min.js' %}" type="06533198dc58f93d92eb8cd0-text/javascript"></script>
+<script src="{% static 'assets/js/wow.min.js' %}" type="06533198dc58f93d92eb8cd0-text/javascript"></script>
+<script src="{% static 'assets/js/tiny-slider.js' %}" type="06533198dc58f93d92eb8cd0-text/javascript"></script>
+<script src="{% static 'assets/js/glightbox.min.js' %}" type="06533198dc58f93d92eb8cd0-text/javascript"></script>
+<script src="{% static 'assets/js/main.js' %}" type="06533198dc58f93d92eb8cd0-text/javascript"></script>
+<script src="{% static 'ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js' %}" data-cf-settings="06533198dc58f93d92eb8cd0-|49" defer=""></script></body>
 
 <!-- Mirrored from demo.graygrids.com/themes/jobgrids/job-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Feb 2021 07:45:25 GMT -->
 </html>
